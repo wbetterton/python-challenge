@@ -27,3 +27,16 @@ print(candidate_list.to_string(header=None, index=None))
 print("-------------------------")
 print("Winner: " + first_place_candidate)
 print("-------------------------")
+
+file = open("resultsfilepoll.txt","w")
+
+file.write("Election Results")
+file.write("-------------------------")
+file.write("Total Votes: " + str(vote_count -1))
+file.write("-------------------------")
+file.write(candidate_list.to_string(header=None, index=None))
+file.write("-------------------------")
+file.write("Winner: " + first_place_candidate)
+file.write("-------------------------")
+
+file.close()
