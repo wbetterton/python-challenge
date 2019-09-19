@@ -28,3 +28,15 @@ print("Total: $" + str(total))
 print("Average Change: $" + str(average))
 print("Greatest Increase in Profits: " + str(increase))
 print("Greatest Decrease in Profits: " + str(decrease))
+
+file = open("resultsfilebank.txt","w")
+
+file.write("Financial Analysis")
+file.write("------------------")
+file.write("Total Months: " + str(month_count - 1))
+file.write("Total: $" + str(total))
+file.write("Average Change: $" + str(average))
+file.write("Greatest Increase in Profits: " + str(increase))
+file.write("Greatest Decrease in Profits: " + str(decrease))
+
+file.close()
